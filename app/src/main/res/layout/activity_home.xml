@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-114dp"
+            android:src="@drawable/bg_home" />
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="70dp"
+            android:text="Halo Ardiansyah!"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="241dp"
+            android:layout_height="41dp"
+            android:layout_below="@id/txt_1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="19dp"
+            android:text="Ayo dapatkan jawaban dari seorang Desainer Profesional!"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_1"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/outline"
+            android:text="Cari mentormu sekarang!"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Janji temu"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_1"
+            android:layout_width="355dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/txt_3"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#F2F2F2"
+            app:cardCornerRadius="18dp">
+
+            <ImageView
+                android:layout_width="187dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/janji_temu" />
+
+            <TextView
+                android:id="@+id/txt_cd1"
+                android:layout_width="190dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="160dp"
+                android:text="Kamu belum memiliki daftar mentoring."
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txt_cd2"
+                android:layout_width="190dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="160dp"
+                android:text="Ayo buat janji temu dengan mentormu sekarang!"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="153dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/outline"
+                android:text="Cari mentor"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cd_1"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="25dp"
+            android:text="Riawayat mentoring"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_2"
+            android:layout_width="355dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/txt_4"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#E1E1E1"
+            app:cardCornerRadius="18dp">
+
+            <ImageView
+                android:layout_width="183dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/riwayat_mentoring" />
+
+            <TextView
+                android:id="@+id/txt_cd3"
+                android:layout_width="190dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="160dp"
+                android:text="Riwayat mentoringmu masih kosong!"
+                android:textStyle="bold"
+                android:textColor="#2054C4"/>
+
+            <TextView
+                android:id="@+id/txt_cd4"
+                android:layout_width="190dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="160dp"
+                android:text="riwayat mentoringmu akan ditampilkan disini"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="153dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/outline"
+                android:text="Cari mentor"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                style="@style/MyButtonStyleSmall"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/img_bgmentor"
+        android:layout_width="411dp"
+        android:layout_height="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_biomentor" />
+
+
+    <TextView
+        android:id="@+id/txt_bio_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Ningsih Cans"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_fotomentor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/img_fotomentor"
+        app:layout_constraintTop_toTopOf="@+id/img_bgmentor" />
+
+    <ImageView
+        android:id="@+id/img_fotomentor"
+        android:layout_width="141dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img_bgmentor"
+        app:layout_constraintTop_toTopOf="@+id/img_bgmentor"
+        app:srcCompat="@drawable/foto_mentor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_bio_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="290dp"
+            android:text="Spesialis"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/ln_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ls_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline"
+                android:text="UI/UX"
+                android:textAllCaps="false"
+                android:textColor="#1E1E1E"
+                android:scaleType="center"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ls_2"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/outline"
+                android:text="Logo Branding"
+                android:textAllCaps="false"
+                android:textColor="#1E1E1E" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ls_3"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/outline"
+                android:text="Logo Branding"
+                android:textAllCaps="false"
+                android:textColor="#1E1E1E" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_bio_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="375dp"
+            android:text="Perangkat"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ln_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="405dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_ps"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ps"/>
+
+            <ImageView
+                android:id="@+id/ic_ai"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_ai"/>
+
+            <ImageView
+                android:id="@+id/ic_figma"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_figma"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_bio_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ln_2"
+            android:text="Waktu Tersedia"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="490dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senin"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selasa"
+                android:layout_marginLeft="20dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/hr_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/outline"
+                android:backgroundTint="@color/white"
+                android:text="Rabu"
+                android:textAllCaps="false"
+                android:textColor="#1E1E1E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kamis"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Jumát"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

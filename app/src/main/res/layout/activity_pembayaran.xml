@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.PembayaranActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:text="Pembayaran"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/back"
+            android:layout_margin="20dp"
+            android:text="Transfer Bank/m-Banking"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cd_1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_2"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="30dp"
+            app:strokeColor="#D8E1F5"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:id="@+id/ln_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline_cd"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGrup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rd_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:drawableLeft="@drawable/bank_bni"
+                        android:drawablePadding="20dp"
+                        android:layoutDirection="rtl"
+                        android:text="Bank BNI"
+                        android:textAlignment="textStart"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rd_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:drawableLeft="@drawable/bank_bca"
+                        android:drawablePadding="20dp"
+                        android:layoutDirection="rtl"
+                        android:text="Bank BCA"
+                        android:textAlignment="textStart"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rd_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="15dp"
+                        android:drawableLeft="@drawable/bank_mandiri"
+                        android:drawablePadding="20dp"
+                        android:layoutDirection="rtl"
+                        android:text="Bank MANDIRI"
+                        android:textAlignment="textStart"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cd_1"
+            android:layout_margin="20dp"
+            android:text="Transfer E-Wallet"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cd_2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_3"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="30dp"
+            app:strokeColor="#D8E1F5"
+            app:strokeWidth="1dp">
+
+            <RadioButton
+                android:id="@+id/rd_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="15dp"
+                android:drawableLeft="@drawable/dana"
+                android:drawablePadding="20dp"
+                android:layoutDirection="rtl"
+                android:text="DANA"
+                android:textAlignment="textStart"
+                android:textSize="18dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cd_3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:enabled="false"
+            app:strokeColor="#D8E1F5"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txt_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Total"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:text="Rp.80.000"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/outline"
+                android:text="Bayar"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

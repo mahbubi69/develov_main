@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DevelovMain</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--    how to radio button/-->
+    <string name="bni">BNI</string>
+    <string name="bca">BCA</string>
+    <string name="mandiri">MANDIRI</string>
+    <string name="dana">DANA</string>
+
+    <!-- name   btn -->
+    <string name="nama">Nama</string>
+    <string name="userName">UserName</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+
+    <!-- name   btn -->
+    <string name="register">Register</string>
+</resources>
