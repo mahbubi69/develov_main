@@ -4,8 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.example.develovmain.core.repository.UserRepository
+import com.example.develovmain.core.restApi.model.LoginUserModel
 import com.example.develovmain.core.restApi.model.RegisterUserModel
 import com.example.develovmain.core.restApi.response.ApiUserResponseFlow
+import com.example.develovmain.core.restApi.response.ResponseLoginUser
 import com.example.develovmain.core.restApi.response.ResponseRegisterUser
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.async
@@ -21,4 +23,13 @@ class UserViewModel @Inject constructor(private val repository: UserRepository) 
                 regisJobs.await().asLiveData()
             }
         }
+
+    fun loginUserViewModel(submitLoginUser: LoginUserModel): LiveData<ApiUserResponseFlow<ResponseLoginUser>> =
+        runBlocking {
+            val regisJobs = async { repository.loginUserRepository(submitLoginUser) }
+            runBlocking {
+                regisJobs.await().asLiveData()
+            }
+        }
+
 }

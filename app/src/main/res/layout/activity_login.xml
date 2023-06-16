@@ -51,7 +51,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/edt_lgn_1"
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:drawableLeft="@drawable/ic_person1"
@@ -60,7 +60,7 @@
                 android:inputType="textEmailAddress" />
 
             <EditText
-                android:id="@+id/edt_lgn_2"
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_marginTop="20dp"

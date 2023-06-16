@@ -1,8 +1,10 @@
 package com.example.develovmain.core.repository
 
 import com.example.develovmain.core.restApi.UserService
+import com.example.develovmain.core.restApi.model.LoginUserModel
 import com.example.develovmain.core.restApi.model.RegisterUserModel
 import com.example.develovmain.core.restApi.response.ApiUserResponseFlow
+import com.example.develovmain.core.restApi.response.ResponseLoginUser
 import com.example.develovmain.core.restApi.response.ResponseRegisterUser
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -33,4 +35,25 @@ class UserRepository @Inject constructor(private val userService: UserService) {
             }
         }.flowOn(Dispatchers.IO)
     }
+
+    suspend fun loginUserRepository(loginUserModel: LoginUserModel): Flow<ApiUserResponseFlow<ResponseLoginUser>> {
+        return flow {
+            emit(ApiUserResponseFlow.Loading())
+            try {
+                emit(ApiUserResponseFlow.Loading())
+                val responseLoginUser = userService.loginUser(loginUserModel)
+                if (responseLoginUser.status == 200) {
+                    emit(ApiUserResponseFlow.Succes(responseLoginUser))
+                } else {
+                    emit(ApiUserResponseFlow.Error(responseLoginUser.message))
+                }
+
+            } catch (e: Exception) {
+                emit(ApiUserResponseFlow.Error(e.toString()))
+                Timber.e("$e")
+                println(e)
+            }
+        }.flowOn(Dispatchers.IO)
+    }
+
 }

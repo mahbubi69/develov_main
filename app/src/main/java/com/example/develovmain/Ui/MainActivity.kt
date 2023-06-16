@@ -3,6 +3,7 @@ package com.example.develovmain.Ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.develovmain.core.adater.ViewPagerOnboardingAdapter
 import com.example.develovmain.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
