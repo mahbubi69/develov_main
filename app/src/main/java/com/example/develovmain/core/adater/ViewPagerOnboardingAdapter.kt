@@ -1,4 +1,4 @@
-package com.example.develovmain.Ui
+package com.example.develovmain.core.adater
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

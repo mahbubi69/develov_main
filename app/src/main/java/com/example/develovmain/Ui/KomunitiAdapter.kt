@@ -7,12 +7,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.develovmain.Datamentor
 import com.example.develovmain.R
 
-class KomunitiAdapter(private val context: Context, private val komuniti: List<Komuniti>, val listener: (Komuniti) -> Unit)
-    : RecyclerView.Adapter<KomunitiAdapter.KomunitiViewHolder>(){
-    class KomunitiViewHolder(view: View): RecyclerView.ViewHolder(view) {
+class KomunitiAdapter(
+    private val context: Context,
+    private val komuniti: List<Komuniti>,
+    val listener: (Komuniti) -> Unit
+) : RecyclerView.Adapter<KomunitiAdapter.KomunitiViewHolder>() {
+    class KomunitiViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         val imgprofilKomuniti = view.findViewById<ImageView>(R.id.img_item_profil)
         val nameprofilKomuniti = view.findViewById<TextView>(R.id.tv_item_profil)
@@ -20,12 +22,12 @@ class KomunitiAdapter(private val context: Context, private val komuniti: List<K
         val descpostKomuniti = view.findViewById<TextView>(R.id.tv_item_deskripsi)
         val imgpostKomuniti = view.findViewById<ImageView>(R.id.img_item_post)
 
-        fun bindView(komuniti: Komuniti, listener: (Komuniti) -> Unit){
+        fun bindView(komuniti: Komuniti, listener: (Komuniti) -> Unit) {
             imgprofilKomuniti.setImageResource(komuniti.imgprofilKomuniti)
             nameprofilKomuniti.text = komuniti.nameprofilKomuniti
             judulpostKomuniti.text = komuniti.judulpostKomuniti
             descpostKomuniti.text = komuniti.descpostKomuniti
-            imgpostKomuniti.setImageResource(komuniti.imgpostKomuniti)
+            imgpostKomuniti.setImageResource(komuniti.imgPosting)
         }
 
     }

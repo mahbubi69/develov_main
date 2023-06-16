@@ -1,4 +1,4 @@
-package com.example.develovmain
+package com.example.develovmain.core.adater
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,16 +7,21 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.develovmain.DatamentorMentor
+import com.example.develovmain.R
 
-class DatamentorAdapter(private val context: Context, private val datamentor: List<Datamentor>, val listener: (Datamentor) -> Unit)
-    : RecyclerView.Adapter<DatamentorAdapter.DatamentorViewHolder>(){
-    class DatamentorViewHolder(view: View): RecyclerView.ViewHolder(view) {
+class DatamentorAdapter(
+    private val context: Context,
+    private val datamentor: List<DatamentorMentor>,
+    val listener: (DatamentorMentor) -> Unit
+) : RecyclerView.Adapter<DatamentorAdapter.DatamentorViewHolder>() {
+    class DatamentorViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         val imgDatamentor = view.findViewById<ImageView>(R.id.img_item_photo)
         val nameDatamentor = view.findViewById<TextView>(R.id.tv_item_name)
         val descDatamentor = view.findViewById<TextView>(R.id.tv_item_description)
 
-        fun bindView(datamentor: Datamentor, listener: (Datamentor) -> Unit){
+        fun bindView(datamentor: DatamentorMentor, listener: (DatamentorMentor) -> Unit) {
             imgDatamentor.setImageResource(datamentor.imgDatamentor)
             nameDatamentor.text = datamentor.nameDatamentor
             descDatamentor.text = datamentor.descDatamentor
@@ -35,6 +40,6 @@ class DatamentorAdapter(private val context: Context, private val datamentor: Li
     }
 
     override fun getItemCount(): Int = datamentor.size
-    }
+}
 
 

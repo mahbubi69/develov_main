@@ -1,17 +1,16 @@
 package com.example.develovmain.Ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.develovmain.databinding.FragmentViewPagerBinding
 
 class ViewPagerFragment : Fragment() {
-
     private var _binding: FragmentViewPagerBinding? = null
     private val binding get() = _binding!!
-    private lateinit var viewPagerAdapter: ViewPagerOnboardingAdapter
+//    private lateinit var viewPagerAdapter: ViewPagerOnboardingAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
