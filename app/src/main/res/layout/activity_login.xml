@@ -4,31 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ui.LoginActivity">
+    tools:context=".Ui.LoginActivity"
+    android:background="@drawable/gradasi_bg2">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/img_lgn_1"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
-            android:src="@drawable/img_2"
-            android:layout_centerHorizontal="true"/>
+            android:src="@drawable/develov_logo" />
 
         <TextView
             android:id="@+id/txt_lgn_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/img_lgn_1"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="40dp"
-            android:layout_below="@+id/img_lgn_1"
             android:text="Masuk"
             android:textColor="#2054C4"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/ln_lgn_1"
@@ -49,7 +56,7 @@
                 android:layout_height="65dp"
                 android:drawableLeft="@drawable/ic_person1"
                 android:drawablePadding="10dp"
-                android:hint="Email / username"
+                android:hint="Email"
                 android:inputType="textEmailAddress" />
 
             <EditText
@@ -69,9 +76,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ln_lgn_1"
+            android:layout_marginLeft="285dp"
             android:text="Lupa kata sandi?"
-            android:textColor="#2054C4"
-            android:layout_marginLeft="285dp"/>
+            android:textColor="#2054C4" />
 
         <LinearLayout
             android:id="@+id/ln_lgn_2"
@@ -79,16 +86,17 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_lgn_2"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp">
 
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
+                android:id="@+id/btn_lgn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/outline"
                 android:text="Masuk"
                 android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/outline"/>
+                android:textColor="#FFFFFF" />
 
 
         </LinearLayout>
@@ -96,10 +104,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/ln_lgn_2"
-            android:text="Belum punya akun?Daftar"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Belum punya akun? Daftar" />
 
     </RelativeLayout>
 

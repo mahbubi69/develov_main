@@ -3,6 +3,7 @@ package com.example.develovmain
 import android.app.Application
 import com.example.develovmain.core.value.Value
 import dagger.hilt.android.HiltAndroidApp
+import net.gotev.uploadservice.BuildConfig
 import net.gotev.uploadservice.UploadServiceConfig
 import net.gotev.uploadservice.logger.UploadServiceLogger
 import net.gotev.uploadservice.okhttp.OkHttpStack

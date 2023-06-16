@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ui.RegisterActivity">
+    tools:context=".Ui.RegisterActivity"
+    android:background="@drawable/gradasi_bg2">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,10 +14,11 @@
         <ImageView
             android:id="@+id/img_rgs_1"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
-            android:src="@drawable/img_2" />
+            android:src="@drawable/develov_logo" />
 
         <TextView
             android:id="@+id/txt_rgs_1"
@@ -112,7 +114,7 @@
             android:layout_below="@id/ln_rgs_2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:text="Sudah punya akun?Masuk" />
+            android:text="Sudah punya akun? Masuk" />
 
     </RelativeLayout>
 
