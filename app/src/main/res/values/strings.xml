@@ -18,4 +18,10 @@
 
     <!-- name   btn -->
     <string name="register">Register</string>
+
+    <string name="nama_mentor">Nama Mentor</string>
+    <string name="description">Deskripsiiii</string>
+    <string name="nama_profile">Nama Profile</string>
+    <string name="judul_post">Ini judul panjang</string>
+    <string name="deskripsi_post">contoh deskripsi bukan sekedar deskripsi ya begitulah</string>
 </resources>
