@@ -1,4 +1,4 @@
-package com.example.develovmain.Ui
+package com.example.develovmain.core.adater
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,11 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.develovmain.R
+import com.example.develovmain.core.restApi.model.KomunitiModel
 
 class KomunitiAdapter(
     private val context: Context,
-    private val komuniti: List<Komuniti>,
-    val listener: (Komuniti) -> Unit
+    private val komuniti: List<KomunitiModel>,
+    val listener: (KomunitiModel) -> Unit
 ) : RecyclerView.Adapter<KomunitiAdapter.KomunitiViewHolder>() {
     class KomunitiViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -22,7 +23,7 @@ class KomunitiAdapter(
         val descpostKomuniti = view.findViewById<TextView>(R.id.tv_item_deskripsi)
         val imgpostKomuniti = view.findViewById<ImageView>(R.id.img_item_post)
 
-        fun bindView(komuniti: Komuniti, listener: (Komuniti) -> Unit) {
+        fun bindView(komuniti: KomunitiModel, listener: (KomunitiModel) -> Unit) {
             imgprofilKomuniti.setImageResource(komuniti.imgprofilKomuniti)
             nameprofilKomuniti.text = komuniti.nameprofilKomuniti
             judulpostKomuniti.text = komuniti.judulpostKomuniti
