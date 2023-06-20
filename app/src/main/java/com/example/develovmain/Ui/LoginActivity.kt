@@ -10,6 +10,7 @@ import android.view.Window
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.viewModels
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.Observer
 import com.example.develovmain.R
 import com.example.develovmain.core.mvvm.UserViewModel
@@ -70,6 +71,8 @@ class   LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             initiateLoginUser(loginSubmit)
+            val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+            startActivity(intent)
         }
     }
 
