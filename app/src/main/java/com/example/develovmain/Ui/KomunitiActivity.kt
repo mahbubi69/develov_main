@@ -18,19 +18,22 @@ class KomunitiActivity : AppCompatActivity() {
                 R.drawable.profil,
                 "yopiii49",
                 "Share logo buatanku",
-                "izin share gess, projek logoku yang bertujuan untuk omkm ibukku"
+                "izin share gess, projek logoku yang bertujuan untuk omkm ibukku",
+                R.drawable.mentor1
             ),
             KomunitiModel(
                 R.drawable.mentor3,
                 "sariii887",
                 "Izin bertanya",
-                "perbedaan Ui dan Ux itu apa ya? mohon para master untuk memberi masukan"
+                "perbedaan Ui dan Ux itu apa ya? mohon para master untuk memberi masukan",
+                R.drawable.mentor2
             ),
             KomunitiModel(
                 R.drawable.mentor2,
                 "Putri Maharani",
                 "share desain",
-                "izin share gess, projek logoku yang bertujuan untuk omkm ibukku"
+                "izin share gess, projek logoku yang bertujuan untuk omkm ibukku",
+                R.drawable.mentor1
 
             ),
         )

@@ -82,10 +82,9 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_msk"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="20dp"
-            android:background="none"
-            android:backgroundTint="@color/bg_biru"
+            android:background="@drawable/outline_btn"
             android:text="Masuk"
             android:textAllCaps="false"
             android:textColor="@color/black" />

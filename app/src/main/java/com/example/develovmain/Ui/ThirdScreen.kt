@@ -26,6 +26,11 @@ class ThirdScreen : Fragment() {
             val intent = Intent(requireContext(), RegisterActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnMsk.setOnClickListener {
+            val intent = Intent(requireContext(), LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {
