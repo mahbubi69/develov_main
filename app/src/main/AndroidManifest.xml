@@ -16,6 +16,9 @@
         android:theme="@style/Theme.DevelovMain"
         tools:targetApi="31">
         <activity
+            android:name=".Ui.ForgetPassword"
+            android:exported="false" />
+        <activity
             android:name=".UploadPostActivity"
             android:exported="false" />
         <activity

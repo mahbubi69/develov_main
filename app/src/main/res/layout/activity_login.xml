@@ -54,7 +54,7 @@
                 android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:drawableLeft="@drawable/ic_person1"
+                android:drawableLeft="@drawable/ic_email"
                 android:drawablePadding="10dp"
                 android:hint="Email"
                 android:inputType="textEmailAddress" />
@@ -93,10 +93,11 @@
                 android:id="@+id/btn_lgn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/outline"
+                android:backgroundTint="@color/bg_biru"
                 android:text="Masuk"
                 android:textAllCaps="false"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                app:cornerRadius="16dp" />
 
 
         </LinearLayout>

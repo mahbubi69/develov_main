@@ -40,14 +40,15 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/btn_1"
             android:layout_width="364dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="48dp"
-            android:background="@drawable/outline"
+            android:backgroundTint="@color/bg_biru"
+            app:cornerRadius="16dp"
             android:text="Cari mentormu sekarang!"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
@@ -100,12 +101,13 @@
                 android:text="Ayo buat janji temu dengan mentormu sekarang!"
                 android:textColor="@color/black"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
                 android:layout_width="153dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="90dp"
-                android:background="@drawable/outline"
+                android:backgroundTint="@color/bg_biru"
+                app:cornerRadius="16dp"
                 android:text="Cari mentor"
                 android:textAllCaps="false"
                 android:textColor="@color/white"/>
@@ -160,16 +162,16 @@
                 android:text="riwayat mentoringmu akan ditampilkan disini"
                 android:textColor="@color/black"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
                 android:layout_width="153dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="90dp"
-                android:background="@drawable/outline"
+                android:backgroundTint="@color/bg_biru"
+                app:cornerRadius="16dp"
                 android:text="Cari mentor"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
-                style="@style/MyButtonStyleSmall"/>
+                android:textColor="@color/white"/>
 
         </androidx.cardview.widget.CardView>
 
