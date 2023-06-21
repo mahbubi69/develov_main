@@ -24,4 +24,7 @@
     <string name="nama_profile">Nama Profile</string>
     <string name="judul_post">Ini judul panjang</string>
     <string name="deskripsi_post">contoh deskripsi bukan sekedar deskripsi ya begitulah</string>
+    <string name="title_home">Home</string>
+    <string name="title_komuniti">Comunity</string>
+    <string name="title_profil">Profile</string>
 </resources>

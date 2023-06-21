@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.ProfileFragment">
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="ardi_ansyah"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cd_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/txt_username">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_profil"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mentor1"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Ardiansyah"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_toRightOf="@id/img_profil"/>
+
+            <TextView
+                android:id="@+id/txt_totalpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/txt_name"
+                android:layout_toRightOf="@id/img_profil"
+                android:text="1 postingan"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_editProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/txt_totalpost"
+                android:text="Edit profil"
+                android:textAllCaps="false"
+                android:background="@drawable/outline_black"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cd_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Postingan Saya"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_1"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/item_postingan"/>
+
+</RelativeLayout>

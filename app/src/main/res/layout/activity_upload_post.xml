@@ -70,7 +70,7 @@
         android:layout_below="@id/edt_deskripsi"
         android:layout_toLeftOf="@id/btn_kirim"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="205dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/ic_lampiran"/>
 
     <Button
