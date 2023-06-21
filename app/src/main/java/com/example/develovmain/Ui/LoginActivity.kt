@@ -20,7 +20,7 @@ import com.example.develovmain.core.restApi.response.ApiUserResponseFlow
 import com.example.develovmain.databinding.ActivityLoginBinding
 import timber.log.Timber
 
-class   LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     private val viewModel: UserViewModel by viewModels()
     private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +31,8 @@ class   LoginActivity : AppCompatActivity() {
     }
 
     private fun initiateLoginUser(submitLogin: LoginUserModel) {
+
+
         viewModel.loginUserViewModel(submitLogin).observe(this, Observer { submit ->
             when (submit) {
                 is ApiUserResponseFlow.Succes -> {
@@ -50,27 +52,27 @@ class   LoginActivity : AppCompatActivity() {
 
     private fun btnLogin() {
         binding.btnLgn.setOnClickListener {
-            Timber.d("Berhasil LogIn")
-            val email = binding.edtEmail.text.toString().trim()
-            val password = binding.edtPassword.text.toString().trim()
-
-            val loginSubmit = LoginUserModel(
-                email,
-                password
-            )
-
-            if (email.isEmpty()) {
-                binding.edtEmail.error = "email tidak boleh kosong"
-                binding.edtEmail.requestFocus()
-                return@setOnClickListener
-            }
-
-            if (password.isEmpty()) {
-                binding.edtPassword.error = "password tidak boleh kosong"
-                binding.edtPassword.requestFocus()
-                return@setOnClickListener
-            }
-            initiateLoginUser(loginSubmit)
+//            Timber.d("Berhasil LogIn")
+//            val email = binding.edtEmail.text.toString().trim()
+//            val password = binding.edtPassword.text.toString().trim()
+//
+//            val loginSubmit = LoginUserModel(
+//                email,
+//                password
+//            )
+//
+//            if (email.isEmpty()) {
+//                binding.edtEmail.error = "email tidak boleh kosong"
+//                binding.edtEmail.requestFocus()
+//                return@setOnClickListener
+//            }
+//
+//            if (password.isEmpty()) {
+//                binding.edtPassword.error = "password tidak boleh kosong"
+//                binding.edtPassword.requestFocus()
+//                return@setOnClickListener
+//            }
+//            initiateLoginUser(loginSubmit)
             val intent = Intent(this@LoginActivity, HomeActivity::class.java)
             startActivity(intent)
         }

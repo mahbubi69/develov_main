@@ -6,25 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.develovmain.R
-import com.example.develovmain.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
-    private val binding get() = _binding!!
-
+class DetailAkanDatangFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        return root
-
+    ): View? {
+        return inflater.inflate(R.layout.fragment_detail_akan_datang, container, false)
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+
     }
 }

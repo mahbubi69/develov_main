@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.DetailAkanDatangFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txtDetailAkanDatang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/detail_akan_datang"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDetailAkanDatang"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/mentor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/lnrTopMentor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMentor"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgMentor"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namaMentor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="18dp"
+                    android:text="@string/nama_mentor1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profesiMentor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/deskripsi_mentor"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvJadwalMentoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lnrTopMentor"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/jadwal_mentoring"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lnrCenterJadwalMentoring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvJadwalMentoring"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_date" />
+
+            <TextView
+                android:id="@+id/tvTanggalMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/jadwal_mentor"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_outline_clock" />
+
+
+            <TextView
+                android:id="@+id/tvJamMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/jam_mentor"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewLineCenter"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/lnrCenterJadwalMentoring"
+            android:layout_margin="15dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/lnrTautanMentoring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewLineCenter"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/img_zoom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/tautan_mentoring"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/link_zoom"
+                    android:textColor="@color/bg_biru"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnrTautanRekaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnrTautanMentoring"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="23dp"
+                android:src="@drawable/img_record_zoom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/tautan_rekaman"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="--"
+                    android:textColor="@color/bg_biru"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvCreatedTglMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnrTautanRekaman"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/dibuat_tanggal_mentor"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/tvCreatedTglMentor"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/bg_biru"
+            android:text="@string/pesan_mentor_lagi"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="16dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -18,7 +18,6 @@
 
     <!-- name   btn -->
     <string name="register">Register</string>
-
     <string name="nama_mentor">Nama Mentor</string>
     <string name="description">Deskripsiiii</string>
     <string name="nama_profile">Nama Profile</string>
@@ -27,4 +26,20 @@
     <string name="title_home">Home</string>
     <string name="title_komuniti">Comunity</string>
     <string name="title_profil">Profile</string>
+
+    <!--    style mahbui-->
+    <string name="riwayat_mentoring">Riwayat Mentoring</string>
+    <string name="detail_akan_datang">Detail Akan Datang</string>
+    <string name="mentor">Mentor : </string>
+    <string name="kirim">Kirim</string>
+    <string name="pesan_mentor_lagi">Pesan Mentor Lagi</string>
+    <string name="nama_mentor1">Lalisa BP</string>
+    <string name="deskripsi_mentor">UI/UX Designer</string>
+    <string name="jadwal_mentoring">Jadwal Mentoring</string>
+    <string name="jadwal_mentor">24 mei 2023</string>
+    <string name="jam_mentor">13.00 WIB</string>
+    <string name="tautan_mentoring">Tautan Mentoring</string>
+    <string name="tautan_rekaman">Tautan Rekaman</string>
+    <string name="link_zoom"> <u>https://zoom.com</u></string>
+    <string name="dibuat_tanggal_mentor"> Dibuat pada tanggal : 4 Mei 2023</string>
 </resources>

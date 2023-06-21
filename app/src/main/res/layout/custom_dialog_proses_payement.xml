@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/silver"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/img_style_payment" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Pembayaranmu sedang di proses oleh admin"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -27,7 +27,8 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
-        btnSubmit()
+//        btnSubmit()
+        btnLogin()
         setContentView(binding.root)
     }
 
@@ -49,48 +50,57 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
+    private fun btnLogin() {
+        binding.tvMasuk.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
     private fun btnSubmit() {
         binding.btnRegister.setOnClickListener {
-            Timber.d("Berhasil LogIn")
-            val nama = binding.edtNama.text.toString().trim()
-            val userName = binding.edtUserName.text.toString().trim()
-            val email = binding.edtEmail.text.toString().trim()
-            val password = binding.edtPassword.text.toString().trim()
+//            Timber.d("Berhasil LogIn")
+//            val nama = binding.edtNama.text.toString().trim()
+//            val userName = binding.edtUserName.text.toString().trim()
+//            val email = binding.edtEmail.text.toString().trim()
+//            val password = binding.edtPassword.text.toString().trim()
+//
+//            val registerSubmit = RegisterUserModel(
+//                nama,
+//                userName,
+//                email,
+//                noHp = "0125145215",
+//                password,
+//                purpose = "testing purupse",
+//                role = 1
+//            )
 
-            val registerSubmit = RegisterUserModel(
-                nama,
-                userName,
-                email,
-                noHp = "0125145215",
-                password,
-                purpose = "testing purupse",
-                role = 1
-            )
-
-            if (nama.isEmpty()) {
-                binding.edtNama.error = "nama tidak boleh kosong"
-                binding.edtNama.requestFocus()
-                return@setOnClickListener
-            }
-
-            if (userName.isEmpty()) {
-                binding.edtUserName.error = "userName tidak boleh kosong"
-                binding.edtUserName.requestFocus()
-                return@setOnClickListener
-            }
-
-            if (email.isEmpty()) {
-                binding.edtEmail.error = "email tidak boleh kosong"
-                binding.edtEmail.requestFocus()
-                return@setOnClickListener
-            }
-
-            if (password.isEmpty()) {
-                binding.edtPassword.error = "password tidak boleh kosong"
-                binding.edtPassword.requestFocus()
-                return@setOnClickListener
-            }
-            initiateRegisterUser(registerSubmit)
+//            if (nama.isEmpty()) {
+//                binding.edtNama.error = "nama tidak boleh kosong"
+//                binding.edtNama.requestFocus()
+//                return@setOnClickListener
+//            }
+//
+//            if (userName.isEmpty()) {
+//                binding.edtUserName.error = "userName tidak boleh kosong"
+//                binding.edtUserName.requestFocus()
+//                return@setOnClickListener
+//            }
+//
+//            if (email.isEmpty()) {
+//                binding.edtEmail.error = "email tidak boleh kosong"
+//                binding.edtEmail.requestFocus()
+//                return@setOnClickListener
+//            }
+//
+//            if (password.isEmpty()) {
+//                binding.edtPassword.error = "password tidak boleh kosong"
+//                binding.edtPassword.requestFocus()
+//                return@setOnClickListener
+//            }
+//            initiateRegisterUser(registerSubmit)
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 

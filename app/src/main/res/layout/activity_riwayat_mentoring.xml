@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.RiwayatMentoringActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/txtRiwayatMentoring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/riwayat_mentoring"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvAkanDatang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRiwayatMentoring"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="yang akan datang"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRiwayatAkanDatang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAkanDatang"
+                android:layout_marginTop="12dp"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_riwayat_mentoring" />
+
+            <View
+                android:id="@+id/viewCenterRv"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rvRiwayatAkanDatang"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tvRiwayatMentoring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewCenterRv"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:text="yang akan datang"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRiwayatMentoring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRiwayatMentoring"
+                android:layout_marginTop="10dp"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_riwayat_mentoring" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

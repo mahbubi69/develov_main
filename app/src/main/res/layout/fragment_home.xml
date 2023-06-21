@@ -27,7 +27,7 @@
             android:text="Halo Ardiansyah!"
             android:textColor="@color/white"
             android:textSize="30dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txt_2"
@@ -48,11 +48,11 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="48dp"
             android:backgroundTint="@color/bg_biru"
-            app:cornerRadius="16dp"
             android:text="Cari mentormu sekarang!"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:cornerRadius="16dp" />
 
         <TextView
             android:id="@+id/txt_3"
@@ -64,15 +64,15 @@
             android:text="Janji temu"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cd_1"
             android:layout_width="355dp"
             android:layout_height="160dp"
             android:layout_below="@id/txt_3"
-            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:backgroundTint="#F2F2F2"
             app:cardCornerRadius="18dp">
 
@@ -86,20 +86,20 @@
                 android:id="@+id/txt_cd1"
                 android:layout_width="190dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="160dp"
+                android:layout_marginTop="10dp"
                 android:text="Kamu belum memiliki daftar mentoring."
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txt_cd2"
                 android:layout_width="190dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="44dp"
                 android:layout_marginLeft="160dp"
+                android:layout_marginTop="44dp"
                 android:text="Ayo buat janji temu dengan mentormu sekarang!"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <Button
                 android:layout_width="153dp"
@@ -107,10 +107,10 @@
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="90dp"
                 android:backgroundTint="@color/bg_biru"
-                app:cornerRadius="16dp"
                 android:text="Cari mentor"
                 android:textAllCaps="false"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                app:cornerRadius="16dp" />
 
         </androidx.cardview.widget.CardView>
 
@@ -119,20 +119,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/cd_1"
-            android:layout_marginTop="60dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
             android:text="Riawayat mentoring"
             android:textColor="@color/black"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cd_2"
             android:layout_width="355dp"
             android:layout_height="160dp"
             android:layout_below="@id/txt_4"
-            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:backgroundTint="#E1E1E1"
             app:cardCornerRadius="18dp">
 
@@ -147,20 +147,20 @@
                 android:id="@+id/txt_cd3"
                 android:layout_width="190dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="160dp"
+                android:layout_marginTop="10dp"
                 android:text="Riwayat mentoringmu masih kosong!"
-                android:textStyle="bold"
-                android:textColor="#2054C4"/>
+                android:textColor="#2054C4"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txt_cd4"
                 android:layout_width="190dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="44dp"
                 android:layout_marginLeft="160dp"
+                android:layout_marginTop="44dp"
                 android:text="riwayat mentoringmu akan ditampilkan disini"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <Button
                 android:layout_width="153dp"
@@ -168,10 +168,10 @@
                 android:layout_marginLeft="175dp"
                 android:layout_marginTop="90dp"
                 android:backgroundTint="@color/bg_biru"
-                app:cornerRadius="16dp"
                 android:text="Cari mentor"
                 android:textAllCaps="false"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                app:cornerRadius="16dp" />
 
         </androidx.cardview.widget.CardView>
 
