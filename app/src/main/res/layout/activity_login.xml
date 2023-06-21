@@ -45,8 +45,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
             android:layout_marginBottom="20dp"
             android:orientation="vertical">
 
@@ -76,7 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ln_lgn_1"
-            android:layout_marginLeft="285dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
             android:text="Lupa kata sandi?"
             android:textColor="#2054C4" />
 
@@ -85,9 +86,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_lgn_2"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="25dp">
 
             <Button
                 android:id="@+id/btn_lgn"

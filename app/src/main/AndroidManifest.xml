@@ -19,7 +19,7 @@
             android:name=".Ui.NavbarActivity"
             android:exported="false"/>
         <activity
-            android:name=".Ui.ForgetPassword"
+            android:name=".Ui.ForgetPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".Ui.UploadPostActivity"
@@ -29,6 +29,28 @@
             android:exported="false" />
         <activity
             android:name=".Ui.ProfileActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".Ui.ForgetPasswordOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ForgetPasswordActivity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Ui.UploadPostActivity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Ui.TambahKomentarActivity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Ui.ProfileActivity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Ui.KomunitiActivity"
             android:exported="false" />
         <activity
             android:name=".Ui.MainActivity"
