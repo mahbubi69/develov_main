@@ -16,19 +16,22 @@
         android:theme="@style/Theme.DevelovMain"
         tools:targetApi="31">
         <activity
-            android:name=".Ui.ForgetPassword"
+            android:name=".Ui.ForgetPasswordOTPActivity"
             android:exported="false" />
         <activity
-            android:name=".UploadPostActivity"
+            android:name=".Ui.ForgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".TambahKomentarActivity"
+            android:name=".Ui.UploadPostActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".Ui.TambahKomentarActivity"
             android:exported="false" />
         <activity
-            android:name=".KomunitiActivity"
+            android:name=".Ui.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.KomunitiActivity"
             android:exported="false" />
         <activity
             android:name=".Ui.MainActivity"
