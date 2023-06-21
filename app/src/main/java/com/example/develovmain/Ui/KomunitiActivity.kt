@@ -1,7 +1,7 @@
 package com.example.develovmain.Ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.develovmain.R
@@ -26,13 +26,16 @@ class KomunitiActivity : AppCompatActivity() {
                 "sariii887",
                 "Izin bertanya",
                 "perbedaan Ui dan Ux itu apa ya? mohon para master untuk memberi masukan",
+
                 R.drawable.mentor2
+
             ),
             KomunitiModel(
                 R.drawable.mentor2,
                 "Putri Maharani",
                 "share desain",
                 "izin share gess, projek logoku yang bertujuan untuk omkm ibukku",
+
                 R.drawable.mentor1
 
             ),
@@ -40,7 +43,7 @@ class KomunitiActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.rv_komuniti)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = KomunitiAdapter(this, komunitiList){
+        recyclerView.adapter = KomunitiAdapter(this, komunitiList) {
 
         }
     }

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ui.RegisterActivity"
-    android:background="@drawable/gradasi_bg2">
+    android:background="@drawable/gradasi_bg2"
+    tools:context=".Ui.RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -81,6 +81,7 @@
                 android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/ic_lock1"
                 android:drawablePadding="10dp"
+                android:drawableEnd=""
                 android:hint="@string/password"
                 android:inputType="textPassword" />
 

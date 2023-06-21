@@ -26,7 +26,6 @@ class DatamentorAdapter(
             nameDatamentor.text = datamentor.nameDatamentor
             descDatamentor.text = datamentor.descDatamentor
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DatamentorModelViewHolder {
