@@ -37,9 +37,6 @@
             android:exported="false" />
 
 
-
-
-
         <activity
             android:name=".Ui.DaftarMentor"
             android:exported="false" />

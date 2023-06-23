@@ -48,10 +48,11 @@ class ProfileFragment : Fragment() {
                 ),
         )
         val recyclerView = binding.rvProfile
-        //recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.setHasFixedSize(true)
-        //recyclerView.adapter = ProfileAdapter(this, profileList){
+        recyclerView.adapter = ProfileAdapter(requireContext(), profileList) {
 
         }
 
+    }
 }

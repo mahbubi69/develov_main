@@ -54,11 +54,12 @@ class KomunitiFragment : Fragment() {
             ),
         )
         val recyclerView = binding.rvKomuniti
-        //recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.setHasFixedSize(true)
-        //recyclerView.adapter = KomunitiAdapter(this, komunitiList) {
+        recyclerView.adapter = KomunitiAdapter(requireContext(), komunitiList) {
 
         }
 
     }
+}
 
