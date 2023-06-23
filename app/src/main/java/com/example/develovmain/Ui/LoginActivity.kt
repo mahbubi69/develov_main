@@ -73,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
 //                return@setOnClickListener
 //            }
 //            initiateLoginUser(loginSubmit)
-            val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+            val intent = Intent(this@LoginActivity, BiodataActivity::class.java)
             startActivity(intent)
         }
     }

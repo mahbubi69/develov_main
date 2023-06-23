@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.KamisFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/ls_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:text="08:00"
+            android:background="@drawable/outline_biru"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:text="10:00"
+            android:background="@drawable/outline_biru"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:text="12:00"
+            android:background="@drawable/outline_abu"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:text="14:00"
+            android:background="@drawable/outline_abu"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_below="@id/ls_1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="40dp"
+            android:text="16:00"
+            android:background="@drawable/outline_biru"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:text="18:00"
+            android:background="@drawable/outline_abu"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:text="20:00"
+            android:background="@drawable/outline_abu"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

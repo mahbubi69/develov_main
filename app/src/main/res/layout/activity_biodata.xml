@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradasi_bg"
+    tools:context=".Ui.BiodataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_bio_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ningsih Cans"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img_fotomentor"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/foto_mentor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_bio_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="290dp"
+            android:text="Spesialis"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:textSize="16sp"
+            android:layout_marginLeft="25dp"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/ln_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ls_1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@drawable/outline_black"
+                android:text="UI/UX"
+                android:textAllCaps="false"
+                android:textColor="#1E1E1E"
+                android:scaleType="center" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_bio_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="375dp"
+            android:text="Perangkat"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ln_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="405dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_ps"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ps"/>
+
+            <ImageView
+                android:id="@+id/ic_ai"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_ai"/>
+
+            <ImageView
+                android:id="@+id/ic_figma"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_figma"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_bio_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/ln_2"
+            android:text="Waktu Tersedia"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/mytablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/txt_bio_4"
+            android:background="@drawable/tab_radius"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIndicatorGravity="stretch"
+            app:tabIndicatorColor="@null"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Body2">
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/myviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/mytablayout"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_below="@id/myviewpager"
+            android:background="@drawable/outline"
+            android:text="Buat Jadwal Mentoring"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
