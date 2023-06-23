@@ -41,6 +41,7 @@
                 android:id="@+id/approve"
                 android:layout_width="40dp"
                 android:layout_height="30dp"
+                android:layout_marginStart="-25dp"
                 android:src="@drawable/ic_check" />
 
         </LinearLayout>
@@ -75,44 +76,104 @@
                 android:textColor="@color/black"
                 android:textSize="17sp" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="25dp"
+                android:gravity="start"
+                android:text="UserName"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/edtUserName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:hint="UserName"
                 android:paddingStart="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="25dp"
+                android:gravity="start"
+                android:text="nama"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/edtNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:hint="Nama"
                 android:paddingStart="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="25dp"
+                android:gravity="start"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/edtJenisKelamin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:hint="Jenis Kelamin"
                 android:paddingStart="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="25dp"
+                android:gravity="start"
+                android:text="Nomor Telepon"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/edtNomorTelepon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:hint="Nomor Telepon"
                 android:paddingStart="5dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="25dp"
+                android:gravity="start"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
 
             <EditText
                 android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
                 android:hint="Email"
                 android:paddingStart="5dp" />
         </LinearLayout>
