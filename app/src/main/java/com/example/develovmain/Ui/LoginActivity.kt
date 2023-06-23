@@ -73,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
 //                return@setOnClickListener
 //            }
 //            initiateLoginUser(loginSubmit)
-            val intent = Intent(this@LoginActivity, EditProfileActivity::class.java)
+            val intent = Intent(this@LoginActivity, NavbarActivity::class.java)
             startActivity(intent)
         }
     }
