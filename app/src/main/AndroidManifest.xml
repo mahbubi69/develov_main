@@ -16,6 +16,13 @@
         android:theme="@style/Theme.DevelovMain"
         tools:targetApi="31">
         <activity
+            android:name=".Ui.EditProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Ui.BiodataActivity"
             android:exported="false" />
         <activity
