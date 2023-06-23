@@ -28,6 +28,14 @@
         <activity
             android:name=".Ui.NavbarActivity"
             android:exported="false" />
+
+
+
+
+
+        <activity
+            android:name=".Ui.DaftarMentor"
+            android:exported="false" />
         <activity
             android:name=".Ui.ForgetPasswordActivity"
             android:exported="false" />

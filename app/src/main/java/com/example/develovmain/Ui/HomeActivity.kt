@@ -16,9 +16,14 @@ class HomeActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-      // binding.btn1.setOnClickListener {
-        //    val intent = Intent(this@HomeActivity, BiodataActivity::class.java)
-          //  startActivity(intent)
-        //}
+       binding.cd1.setOnClickListener {
+            val intent = Intent(this, BiodataActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.cd2.setOnClickListener {
+            val intent = Intent(this, DaftarMentor::class.java)
+            startActivity(intent)
+        }
     }
 }
