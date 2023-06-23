@@ -29,12 +29,12 @@ class ProfileActivity : AppCompatActivity() {
                 "Putri Maharani",
                 "share desain",
 
-            ),
+                ),
         )
         val recyclerView = findViewById<RecyclerView>(R.id.rv_profile)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = ProfileAdapter(this, profileList){
+        recyclerView.adapter = ProfileAdapter(this, profileList) {
 
         }
     }

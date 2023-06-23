@@ -16,7 +16,7 @@ class DaftarMentor : AppCompatActivity() {
     }
 
     private fun initiateDataRv() {
-        val datamentorList = listOf<DatamentorModel>(
+        val datamentorList = listOf(
             DatamentorModel(
                 R.drawable.mentor1, "Ningsih Cans", "08.00 - 12.00 WIB"
             ), DatamentorModel(
