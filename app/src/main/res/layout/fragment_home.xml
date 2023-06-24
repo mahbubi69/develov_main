@@ -102,6 +102,7 @@
                 android:textColor="@color/black" />
 
             <Button
+                android:id="@+id/btn_2"
                 android:layout_width="153dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="175dp"
@@ -121,7 +122,7 @@
             android:layout_below="@id/cd_1"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="60dp"
-            android:text="Riawayat mentoring"
+            android:text="Riwayat mentoring"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -163,6 +164,7 @@
                 android:textColor="@color/black" />
 
             <Button
+                android:id="@+id/btn_3"
                 android:layout_width="153dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="175dp"

@@ -1,10 +1,13 @@
 package com.example.develovmain.Ui
 
 import android.app.Dialog
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.View
 import android.view.Window
 import android.widget.Button
 import android.widget.TextView
@@ -29,6 +32,7 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
 //        btnSubmit()
         btnLogin()
+        btnRegister()
         setContentView(binding.root)
     }
 
@@ -53,6 +57,13 @@ class RegisterActivity : AppCompatActivity() {
     private fun btnLogin() {
         binding.tvMasuk.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun btnRegister() {
+        binding.btnRegister.setOnClickListener {
+            val intent = Intent(this, PendaftaranBerhasilActivity::class.java)
             startActivity(intent)
         }
     }
@@ -99,9 +110,10 @@ class RegisterActivity : AppCompatActivity() {
 //                return@setOnClickListener
 //            }
 //            initiateRegisterUser(registerSubmit)
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, PendaftaranBerhasilActivity::class.java)
             startActivity(intent)
         }
+
     }
 
     private fun messageCustomDialogLogout(message: String) {
@@ -119,6 +131,7 @@ class RegisterActivity : AppCompatActivity() {
         }
         dialog.show()
     }
+
 
 }
 

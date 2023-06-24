@@ -28,7 +28,7 @@ class ThirdScreen : Fragment() {
         }
 
         binding.btnMsk.setOnClickListener {
-            val intent = Intent(requireContext(), HomeActivity::class.java)
+            val intent = Intent(requireContext(), LoginActivity::class.java)
             startActivity(intent)
         }
     }

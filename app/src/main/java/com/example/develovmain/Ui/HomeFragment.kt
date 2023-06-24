@@ -1,5 +1,6 @@
 package com.example.develovmain.Ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -21,6 +22,31 @@ class HomeFragment : Fragment() {
 
         return root
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btn1.setOnClickListener {
+            val intent = Intent(requireContext(), DaftarMentor::class.java)
+            startActivity(intent)
+        }
+        binding.btn2.setOnClickListener {
+            val intent = Intent(requireContext(), DaftarMentor::class.java)
+            startActivity(intent)
+        }
+        binding.btn3.setOnClickListener {
+            val intent = Intent(requireContext(), DaftarMentor::class.java)
+            startActivity(intent)
+        }
+        binding.cd1.setOnClickListener {
+            val intent = Intent(requireContext(), DaftarMentor::class.java)
+            startActivity(intent)
+        }
+        binding.cd2.setOnClickListener {
+            val intent = Intent(requireContext(), DaftarMentor::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {

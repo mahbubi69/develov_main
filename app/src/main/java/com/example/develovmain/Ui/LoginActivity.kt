@@ -73,7 +73,11 @@ class LoginActivity : AppCompatActivity() {
 //                return@setOnClickListener
 //            }
 //            initiateLoginUser(loginSubmit)
-            val intent = Intent(this@LoginActivity, NavbarActivity::class.java)
+            val intent = Intent(this, NavbarActivity::class.java)
+            startActivity(intent)
+        }
+        binding.txt2.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
     }

@@ -18,6 +18,7 @@
 
     <!-- name   btn -->
     <string name="register">Register</string>
+    <string name="masuk">Masuk</string>
     <string name="nama_mentor">Nama Mentor</string>
     <string name="description">Deskripsiiii</string>
     <string name="nama_profile">Nama Profile</string>

@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DevelovMain"
         tools:targetApi="31">
+
         <activity
             android:name=".Ui.EditProfileActivity"
             android:exported="false">
@@ -35,8 +36,6 @@
         <activity
             android:name=".Ui.NavbarActivity"
             android:exported="false" />
-
-
         <activity
             android:name=".Ui.DaftarMentor"
             android:exported="false" />
@@ -48,9 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".Ui.TambahKomentarActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Ui.ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".Ui.ForgetPasswordOTPActivity"
@@ -68,20 +64,19 @@
             android:exported="false"
             tools:ignore="DuplicateActivity" />
         <activity
-            android:name=".Ui.ProfileActivity"
-            android:exported="false"
-            tools:ignore="DuplicateActivity" />
-        <activity
-            android:name=".Ui.KomunitiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Ui.MainActivity"
-            android:exported="true">
+            android:name=".Ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ui.MainActivity"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".Ui.RegisterActivity"
